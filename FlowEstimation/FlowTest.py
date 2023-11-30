@@ -5,7 +5,7 @@ from tkinter import Tk, filedialog
 
 # Open a file dialog to choose the input image
 Tk().withdraw()  # We don't want a full GUI, so keep the root window from appearing
-input_image_path = filedialog.askopenfilename(title="Select an Image", filetypes=[("Image files", "*.png;*.jpg;*.jpeg")])
+input_image_path = filedialog.askopenfilename(title="Select an Image")
 
 # Check if a file was selected
 if not input_image_path:
